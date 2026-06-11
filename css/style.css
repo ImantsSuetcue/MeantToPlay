@@ -795,6 +795,19 @@ section {
   color: var(--color-text);
 }
 
+.legal-links {
+  margin-top: 12px;
+  font-size: 0.78rem;
+}
+
+.legal-links a {
+  transition: color var(--transition);
+}
+
+.legal-links a:hover {
+  color: var(--color-text);
+}
+
 /* ---------- Project page ---------- */
 
 .project-hero {
