@@ -60,11 +60,11 @@ const nextBtn = document.getElementById('carousel-next');
 const captionEl = document.getElementById('carousel-caption');
 
 const captions = [
-  'Trying something new',
-  'Out and about',
-  'Golden hour wind-down',
-  'Chasing the next spot',
-  'Good company, good times',
+  'Etwas Neues ausprobieren',
+  'Unterwegs',
+  'Goldene Stunde',
+  'Auf Reisen',
+  'Gute Zeiten mit Freunden',
 ];
 
 let currentSlide = 0;
@@ -123,7 +123,7 @@ if (form) {
 
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
-    status.textContent = 'Sending...';
+    status.textContent = 'Wird gesendet...';
     status.className = 'form-status';
 
     try {
@@ -136,11 +136,11 @@ if (form) {
       const result = await response.json();
 
       if (result.success) {
-        status.textContent = "Thanks — I'll get back to you soon.";
+        status.textContent = 'Danke — ich melde mich bald bei dir.';
         status.className = 'form-status success';
         form.reset();
       } else {
-        status.textContent = 'Something went wrong. Please try again later.';
+        status.textContent = 'Etwas ist schiefgelaufen. Bitte versuch es später nochmal.';
         status.className = 'form-status error';
       }
     } catch (err) {
